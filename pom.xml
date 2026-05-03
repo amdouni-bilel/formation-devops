@@ -17,8 +17,8 @@
     <groupId>com.example</groupId> <!-- Identifiant du groupe de votre projet -->
     <artifactId>formation-devops</artifactId> <!-- Identifiant de l'artéfact (le nom de votre projet) -->
     <version>0.0.1-SNAPSHOT</version> <!-- Version du projet -->
-    <name>formation_devops</name> <!-- Nom du projet -->
-    <description>formation_devops</description> <!-- Description du projet -->
+    <name>formation-devops</name> <!-- Nom du projet -->
+    <description>formation-devops</description> <!-- Description du projet -->
     <url/> <!-- URL du projet (optionnel) -->
 
     <!-- Licences et développeurs -->
