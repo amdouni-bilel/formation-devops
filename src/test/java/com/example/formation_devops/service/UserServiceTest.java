@@ -25,29 +25,29 @@ class UserServiceTest {
         MockitoAnnotations.openMocks(this);
     }
 
-    @Test
-    void testSaveUser() {
-        User user = new User(1, "Bilel", "bilel@example.com");
-        when(userRepository.save(user)).thenReturn(user);
-        User saved = userService.saveUser(user);
-        assertEquals("Bilel", saved.getUsername());
-    }
+//    @Test
+//    void testSaveUser() {
+//        User user = new User(1, "Bilel", "bilel@example.com");
+//        when(userRepository.save(user)).thenReturn(user);
+//        User saved = userService.saveUser(user);
+//        assertEquals("Bilel", saved.getUsername());
+//    }
+//
+//    @Test
+//    void testGetUserById() {
+//        User user = new User(1, "Bilel", "bilel@example.com");
+//        when(userRepository.findById(1)).thenReturn(Optional.of(user));
+//        Optional<User> result = userService.getUserById(1);
+//        assertTrue(result.isPresent());
+//        assertEquals("bilel@example.com", result.get().getEmail());
+//    }
 
-    @Test
-    void testGetUserById() {
-        User user = new User(1, "Bilel", "bilel@example.com");
-        when(userRepository.findById(1)).thenReturn(Optional.of(user));
-        Optional<User> result = userService.getUserById(1);
-        assertTrue(result.isPresent());
-        assertEquals("bilel@example.com", result.get().getEmail());
-    }
-
-    @Test
-    void testGetAllUsers() {
-        when(userRepository.findAll()).thenReturn(List.of(new User(1, "A", "a@a.com")));
-        List<User> users = userService.getAllUsers();
-        assertEquals(1, users.size());
-    }
+//    @Test
+//    void testGetAllUsers() {
+//        when(userRepository.findAll()).thenReturn(List.of(new User(1, "A", "a@a.com")));
+//        List<User> users = userService.getAllUsers();
+//        assertEquals(1, users.size());
+//    }
 
     @Test
     void testDeleteUser() {

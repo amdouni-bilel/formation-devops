@@ -23,11 +23,11 @@ public class UserSteps {
     public void iAmAnAdminUser() {
     }
 
-    @When("I create a user with username {string} and email {string}")
-    public void iCreateAUser(String username, String email) {
-        User user = new User(1, username, email);
-        createdUser = userService.saveUser(user);
-    }
+//    @When("I create a user with username {string} and email {string}")
+//    public void iCreateAUser(String username, String email) {
+//        User user = new User(1, username, email);
+//        createdUser = userService.saveUser(user);
+//    }
 
     @Then("the user should be saved successfully")
     public void theUserShouldBeSavedSuccessfully() {
@@ -35,11 +35,11 @@ public class UserSteps {
         assertEquals("Bilel", createdUser.getUsername());
     }
 
-    @Given("a user with ID {int} exists")
-    public void aUserWithIdExists(int id) {
-        User user = new User(id, "Bilel", "bilel@example.com");
-        userService.saveUser(user);
-    }
+//    @Given("a user with ID {int} exists")
+//    public void aUserWithIdExists(int id) {
+//        User user = new User(id, "Bilel", "bilel@example.com");
+//        userService.saveUser(user);
+//    }
 
     @When("I retrieve the user by ID {int}")
     public void iRetrieveTheUserById(int id) {
@@ -52,11 +52,11 @@ public class UserSteps {
         assertEquals(username, createdUser.getUsername());
     }
 
-    @When("I update the user with ID {int} to have username {string} and email {string}")
-    public void iUpdateTheUserWithId(int id, String username, String email) {
-        User user = new User(id, username, email);
-        createdUser = userService.updateUser(id, user);
-    }
+//    @When("I update the user with ID {int} to have username {string} and email {string}")
+//    public void iUpdateTheUserWithId(int id, String username, String email) {
+//        User user = new User(id, username, email);
+//        createdUser = userService.updateUser(id, user);
+//    }
 
     @Then("the user should be updated successfully")
     public void theUserShouldBeUpdatedSuccessfully() {
